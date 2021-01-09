@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Home Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="W3.JS.js"></script>  <!-- W3.Js library -->
+<link rel="stylesheet" href="W3.CSS.css">  <!-- W3.CSS library -->
+<link rel="stylesheet" href="my-css.css">  <!-- my-css library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Icon Library -->
+<script src="https://www.w3schools.com/appml/2.0.3/appml.js"></script>  <!-- AppMl Link-->
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <!-- Jquery Library -->
+   <!-- Bootstrap 4  Library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+</style>
+<script>   //jquery goes here
+$(document).ready(function(){
+  $("#remove-btn").click(function(){
+    $("#side-content").hide(500);
+	$("#drop-content").hide();
+	$("#up-btn").removeClass("fa fa-angle-double-up");
+	$("#up-btn").addClass("fa fa-angle-double-down");
+  });
+});
+$(document).ready(function(){
+  $("#drop-bar").click(function(){
+    $("#drop-content").show(500);
+	$("#up-btn").removeClass("fa fa-angle-double-down");
+	$("#up-btn").addClass("fa fa-angle-double-up");
+	  $("#drop-bar").click(function(){
+	   $("#drop-content").hide(500);
+	   $("#up-btn").removeClass("fa fa-angle-double-up");
+	   $("#up-btn").addClass("fa fa-angle-double-down");
+		
+	  });
+  });
+  });
+$(document).ready(function(){
+  $("selector").event(function(){
+    $("selector").action(interval);
+  });
+});
+</script>  
+</head>
+<body class="w3-sans-serif">
+<!--Header for Leptop-->
+<div class="w3-container w3-display-container w3-hide-medium w3-gray" style="height:200px;back">
+<div class="w3-display-middle w3-wide"><h1>Hi This Website Is Created By Me</h1>
+<p>This page is Responsive.Mobile View is another view</p>
+</div>
+</div>
+<!--Header for Mobile-->
+<div class="w3-display-container w3-hide-large w3-text-white">
+<img src="cover.jpg"  class="w3-image">
+<div class="w3-display-middle w3-wide"><h1>Hi This Website Is Created By Me</h1>
+<p>This page is Responsive.Leptop View is another view</p>
+</div>
+</div>
+
+<!-- Responsive bar start here-->
+<!-- Leptop Bar-->
+<div class="w3-bar w3-hide-medium w3-text-white" style="background-color:#333">   
+<a href="" class="w3-bar-item w3-button w3-xlarge"><i class="fa fa-home w3-text-red"></i>Home</a>
+<a href="" class="w3-bar-item w3-button w3-xlarge">My Portfolio</a>
+<div class="w3-xlarge w3-dropdown-hover"><button class="w3-button">Dropdown</button> 
+<div class="w3-dropdown-content w3-bar-block w3-red w3-card-4">
+<a href="" class="w3-bar-item w3-button">Link</a>
+<a href="" class="w3-bar-item w3-button">Link</a>
+</div>
+</div>
+<div class="w3-button w3-bar-item w3-right w3-xlarge">Contact</div>
+</div>
+
+
+
+<!-- Mobile Bar-->
+<div class="w3-bar w3-hide-large w3-text-white" style="background-color:#333">   
+<div class="w3-bar-item w3-button w3-large" onclick="w3.show('#side-content')"><i class="fa fa-align-justify w3-text-red"></i></div>
+<div class="w3-button w3-bar-item w3-right w3-large">Contact</div>
+
+</div>
+
+ <!-- Sidebar -->  
+<div class="w3-bar-block w3-sidebar w3-black w3-animate-left my-side1 w3-responsive" id="side-content" style="display:none">   
+<div class="w3-row">
+<a href="" class="w3-col w3-button w3-large w3-left-align" style="width:70%"><i class="fa fa-home"></i>Home</a>
+<div class="w3-col w3-button w3-large w3-center" style="width:30%" id="remove-btn"><i class="fa fa-remove"></i></div>
+</div>
+<a href="" class="w3-bar-item w3-button w3-large">My Portfolio</a>
+<a href="" class="w3-bar-item w3-button w3-large">About Me</a>
+<div class="w3-large w3-dropdown-click"  id="drop-bar"><button  class="w3-button">Dropdown<i id="up-btn" class="fa fa-angle-double-down w3-button"></i></button>
+<div class="w3-dropdown-content w3-bar-block w3-red w3-card-4" id="drop-content">
+<a href="" class="w3-bar-item w3-button">Link</a>
+<a href="" class="w3-bar-item w3-button">Link</a>
+</div>
+</div>
+</div>
+<!-- Responsive bar end here-->
+
+<!--Row start here-->
+<div class="my-row">
+  <div class="my-side1 w3-hide-medium">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <img class="hover-shadow" style="width:100%" src="cover.jpg">
+    <h3 class="w3-wide">Name:</h3>
+	<h4>Asadul Islam Hamzah</h4>
+     <h3 class="w3-wide">University Name:</h3>
+	 <h4>Chittagong University of Engineering & Technology(CUET)</h4>
+	 <h3 class="w3-wide">Department:</h3>
+	 <h4>Bio-Medical Engineering</h4>
+	 <h3 class="w3-wide">Country:</h3>
+	 <h4>Bangladesh</h4>
+	 <h3 class="w3-wide">Religion:</h3>
+	 <h4>Islam</h4>
+	 <h3 class="w3-wide">Home District:</h3>	 
+	 <h4>Savar,Dhaka,Bangladesh</h4>
+  </div>
+  <div class="my-side2 my-side2-mobile">
+    <h2>My Project</h2>
+    <h5>Title description, September, 2020</h5>
+    <img class="hover-shadow" style="width:500px" src="Car1.jpg">
+    <h3>Project Name:Android Controlled Car</h3>
+	<a href="##" style="font-size:19px;">Program Code</a>
+    
+    <br>
+    <h2>My Project</h2>
+    <h5>Title description, September, 2020</h5>
+    <img class="hover-shadow" src="Car2.jpg" width="500px">
+    <h3>Project Name:Obstacle Avoidable Car</h3>
+    <a href="##" style="font-size:19px;">Program Code</a>
+	
+  </div>
+</div>
+<!--Row ends here-->
+<div class="w3-row w3-text-white" style="background-color:#282D3C">
+<div class="w3-half  w3-center"><h4>Facebook Link: </h4><a href="" class="w3-large w3-button"><i class="fa fa-facebook"></i>Click Here</a>   
+</div>
+<div class="w3-half w3-center"> <h4>Email:</h4><p class="w3-large">asadul7733@gmail.com    
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>
